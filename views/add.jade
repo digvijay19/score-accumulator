@@ -1,0 +1,8 @@
+extends layout
+block content
+	form(name='add',method='post',action='/addNewRecord')
+		label(for='name') Name
+		input(type='text',name='name',required='required')
+		label(for='score') Score
+		input(type='number',name='score',required='required')
+		input(type='submit',value='Add')

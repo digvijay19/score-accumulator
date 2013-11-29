@@ -1,0 +1,10 @@
+extends layout
+block content
+	table
+		tr
+			th Name
+			th Score
+		-each val in data
+			tr
+				td #{val.name}
+				td #{val.score}
